@@ -1,5 +1,13 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, StyleSheet} from 'react-native';
+
+const styles = StyleSheet.create({
+    header: {
+      fontSize:35,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });
 
 const Header = props  => {
     if(props.work === true){
@@ -8,7 +16,7 @@ const Header = props  => {
          status = 'Break'
     }
     return (   
-        <Text> {`${status} Timer`} </Text>
+        <Text style={styles.header}> {`${status} Timer`} </Text>
     )
 }
 

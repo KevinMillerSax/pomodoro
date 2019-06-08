@@ -1,5 +1,7 @@
 import React from 'react';
-import {Button} from 'react-native';
+import {Button, StyleSheet} from 'react-native';
+
+
 
 const StartButton = props  => {  
     if(props.paused === true){
@@ -8,7 +10,7 @@ const StartButton = props  => {
          status = 'Pause'
     }
     return (
-        <Button title={`${status}`} onPress={props.startCountdown}></Button>
+        <Button color="red" title={`${status}`} onPress={props.startCountdown}></Button>
     )
 }
 

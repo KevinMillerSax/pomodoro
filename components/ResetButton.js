@@ -3,7 +3,7 @@ import {Button} from 'react-native';
 
 const ResetButton = props  => {  
     return (
-        <Button title='Reset' onPress={props.resetCountdown}></Button>
+        <Button color="red" title='Reset' onPress={props.resetCountdown}></Button>
     )
 }
 
